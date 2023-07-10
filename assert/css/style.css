@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Times New Roman", Georgia, serif;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 4px;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*CSS DÙNG CHUNG.................... */
+.font-heading {
+  font-size: 36px !important;
+}
+
+.content-padding {
+  padding: 64px 16px !important;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.content-container {
+  padding: 12px 24px;
+  text-align: center;
+}
+
+.img-container {
+  padding: 12px 24px;
+  text-align: center;
+}
+
+.for-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  opacity: 0.75;
+  vertical-align: middle;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+/*...............................  */
+
+/* Header Section */
+
+.header {
+  /* width: 100vw; */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  min-width: 100%;
+
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+
+.nav-heading,
+.nav-menu-items .menu-item {
+  color: #000;
+  font-size: 15px;
+  padding: 8px 16px;
+  letter-spacing: 4px;
+}
+
+.nav-heading:hover,
+.nav-menu-items .menu-item:hover {
+  background-color: #ccc;
+}
+
+.nav-menu-items a {
+  display: inline-block;
+}
+
+.header .slider {
+  background-image: url("../images/hamburger.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50%;
+
+  position: relative;
+}
+
+.header .slider .slider-name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 12px 24px;
+  opacity: 0.6;
+}
+
+.slider-name > h1 {
+  text-shadow: 0 0 0.1px #000;
+}
+
+/*---------- About Section ----------*/
+
+.content .about-section {
+  display: flex;
+  justify-content: center;
+}
+
+.content .about-content {
+  padding: 12px 24px;
+  text-align: center;
+}
+
+.about-content-since,
+.about-content-1,
+.about-content-2 {
+  font-size: 18px;
+}
+
+.about-content-1 {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.about-content-1 span {
+  background-color: #f1f1f1;
+  display: inline-block;
+  padding: 0 8px;
+}
+
+.about-content-2 {
+  margin-bottom: 18px;
+  text-align: left;
+  color: #757575;
+}
+
+/*----------Food Menu Section----------*/
+
+.content .food-menu-section {
+  display: flex;
+  justify-content: center;
+}
+
+.food-menu-section .food-name {
+  margin: 10px 0;
+  font-size: 20px;
+  text-align: left;
+}
+
+.food-menu-section .food-details {
+  margin: 15px 0;
+  text-align: left;
+  color: #757575;
+}
+
+/*----------Contact Section----------*/
+.contact-section .contact-location {
+  margin: 18px 0;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #607d8b;
+}
+
+.contact-section .contact-number {
+  margin-bottom: 15px;
+}
+
+.contact-section .input-field {
+  margin: 15px 0;
+  padding: 16px 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  font-size: 15px;
+}
+
+.contact-section .form-btn {
+  margin-bottom: 32px;
+  margin-top: 16px;
+  padding: 8px 16px;
+  text-align: center;
+  border: none;
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+.contact-section .form-btn:hover {
+  background-color: #ccc;
+}
+
+/* ----------Footer Section----------*/
+.footer {
+  padding: 32px 0;
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+.footer .distribute {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.footer .distribute a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* ----------For Mobile Screeen: < 740px---------- */
+@media only screen and (max-width: 46.1875em) {
+  .about-section .abou-img {
+    display: none;
+  }
+
+  .col-1 {
+    width: 100%;
+  }
+
+  .nav-menu-items .menu-item {
+    display: none;
+  }
+}
+
+/* ----------For Tablet Screeen: >=740px and < 1024px---------- */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .about-section .about-content-2 {
+    display: none;
+  }
+}
+
+/* ----------For Mobile AND Tablet Screeen---------- */
+@media only screen and (max-width: 63.9375em) {
+  .content .food-menu-section {
+    display: block;
+  }
+
+  .food-menu-section .menu-list,
+  .food-menu-section .img-container {
+    width: 100%;
+  }
+}
+
+/* ----------For PC Screeen >= 1024px ---------- */
+@media only screen and (min-width: 64em) {
+}
+
+/* ----------For Big PC Screeen---------- */
+@media only screen and (min-width: 1100px) {
+  .content .about-section,
+  .content .contact-section,
+  .content .food-menu-section {
+    margin: 0 auto;
+    width: 1100px;
+  }
+}
